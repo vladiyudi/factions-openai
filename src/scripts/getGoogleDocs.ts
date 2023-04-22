@@ -55,17 +55,17 @@ async function main() {
   const documentId = "12MtYGn_GK0LW3VxFlVX-uzK1RwUpldBAI_MgugG1h68";
   const res = await client.documents.get({ documentId });
 
-  const content = res.data.body.content;
-  const data: any [];
-  content?.forEach((element) => {
-    if (element.paragraph) {
-      const body = element.paragraph.elements[0].textRun;
+  // const content = res.data.body.content;
+  // const data: any []= [];
+  // content?.forEach((element) => {
+  //   if (element.paragraph) {
+  //     const body = element.paragraph.elements[0].textRun;
 
-      if (body?.content && body.content !== "\n") {
-        data.push(body.content);
-      }
-    }
-  });
+  //     if (body?.content && body.content !== "\n") {
+  //       data.push(body.content);
+  //     }
+  //   }
+  // });
 
   // console.log(data);
 
